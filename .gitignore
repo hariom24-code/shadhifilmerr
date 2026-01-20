@@ -1,0 +1,19 @@
+# Large video files
+*.mp4
+*.MP4
+
+# Large image files
+*.mov
+*.MOV
+*.avi
+*.AVI
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

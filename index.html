@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Shadhi Filmer - Premier destination wedding photography and cinematic films. Capturing timeless moments across India with raw emotion and artistic vision." />
+  <meta name="keywords" content="wedding photography, destination wedding, cinematic films, wedding photographer India, pre-wedding photography, wedding videography" />
+  <meta name="author" content="Shadhi Filmer" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shadhifilmer.com/" />
+  <meta property="og:title" content="Shadhi Filmer | Wedding Photography & Films" />
+  <meta property="og:description" content="Timeless destination wedding photography and cinematic films across India" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shadhi Filmer | Wedding Photography & Films" />
+  <meta name="twitter:description" content="Timeless destination wedding photography and cinematic films across India" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://shadhifilmer.com/" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📸</text></svg>" />
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" as="style">
+  
+  <title>Shadhi Filmer | Wedding Photography & Films</title>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" importance="high">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin importance="high">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Shadhi Filmer",
+    "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80",
+    "description": "Premier destination wedding photography and cinematic films",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "",
+      "addressCountry": "IN"
+    },
+    "telephone": "+917798200639",
+    "priceRange": "$$$$",
+    "serviceType": ["Wedding Photography", "Videography", "Pre-Wedding Shoots"],
+    "areaServed": {
+      "@type": "Country",
+      "name": "IN"
+    }
+  }
+  </script>
+  
+  <!-- Preload GSAP -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" as="script">
+</head>
+<body>
+  <div class="relative overflow-x-hidden selection:bg-yellow-600 selection:text-white">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-8">
+      <div class="container mx-auto px-4 sm:px-6 flex justify-between items-center">
+        <a href="#" class="text-xl sm:text-2xl font-serif tracking-widest font-bold hover:text-yellow-600 transition-colors" title="Shadhi Filmer - Home">
+          SHADHI <span class="text-yellow-600">FILMER</span>
+        </a>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-4 lg:space-x-10 text-xs lg:text-sm tracking-widest uppercase font-light">
+          <a href="#portfolio" class="hover:text-yellow-600 transition-colors py-2" title="View our photography gallery">Portfolio</a>
+          <a href="#films" class="hover:text-yellow-600 transition-colors py-2" title="Watch our cinematic films">Films</a>
+          <a href="#about" class="hover:text-yellow-600 transition-colors py-2" title="Our story and philosophy">Story</a>
+          <a href="#book" class="hover:text-yellow-600 transition-colors py-2" title="Book your wedding date">Book</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none z-50 p-2 active:scale-95 transition-transform" aria-label="Toggle Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black/95 backdrop-blur-md pt-20 z-40">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 text-lg tracking-widest uppercase font-light">
+          <a href="#portfolio" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Portfolio</a>
+          <a href="#films" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Films</a>
+          <a href="#about" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Story</a>
+          <a href="#book" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Book</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center pt-20 sm:pt-0">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="./images/IMG_4388.JPEG" 
+            alt="Cinematic Wedding Portfolio by Shadhi Filmer" 
+            class="w-full h-full object-cover scale-110"
+            loading="eager"
+          />
+          <div id="hero-overlay" class="absolute inset-0 bg-black opacity-100 transition-opacity"></div>
+        </div>
+
+        <div id="hero-content" class="relative z-10 px-4 sm:px-6 max-w-4xl">
+          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-cursive italic mb-3 sm:mb-4 leading-tight">
+            Shadhi Filmer
+          </h1>
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl font-light tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-8 sm:mb-12 text-gray-200">
+            Destination Wedding Photography & Films
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <a 
+              href="#book" 
+              title="Jump to Booking Form"
+              class="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-white text-black font-semibold uppercase tracking-widest text-sm sm:text-base hover:bg-yellow-600 hover:text-white transition-all duration-300 active:scale-95 min-h-[44px] flex items-center justify-center"
+            >
+              Book Your Date
+            </a>
+            <a 
+              href="https://wa.me/917798200639" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              title="Chat with us now"
+              class="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 border border-white text-white font-semibold uppercase tracking-widest text-sm sm:text-base hover:bg-white/10 transition-all duration-300 active:scale-95 min-h-[44px] flex items-center justify-center"
+            >
+              WhatsApp Enquiry
+            </a>
+          </div>
+          
+          <div class="mt-12 sm:mt-20 text-xs tracking-[0.4em] sm:tracking-[0.5em] uppercase text-gray-300 flex items-center justify-center gap-2 sm:gap-4 flex-wrap">
+            <span>Timeless</span>
+            <span class="h-1 w-1 bg-white rounded-full"></span>
+            <span>Raw</span>
+            <span class="h-1 w-1 bg-white rounded-full"></span>
+            <span>Unscripted</span>
+          </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
+          <div class="w-[1px] h-16 bg-gradient-to-b from-white to-transparent"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-16 sm:py-32 md:py-40 px-4 sm:px-6 bg-black flex items-center justify-center overflow-hidden">
+        <div class="container mx-auto max-w-5xl relative">
+          <div class="absolute -top-10 -left-10 text-[8rem] sm:text-[10rem] font-serif text-white/5 select-none pointer-events-none">Story</div>
+          <div class="relative z-10 text-center">
+            <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif leading-relaxed mb-8 sm:mb-12 italic text-white px-2">
+              "We capture weddings as they unfold – raw emotions, real moments, timeless stories. Every frame is a tribute to your love."
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12 md:gap-32 mt-12 sm:mt-20">
+              <div class="text-center px-2">
+                <span class="block text-5xl sm:text-6xl font-serif text-yellow-600 mb-2">150+</span>
+                <span class="text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Weddings in India</span>
+              </div>
+              <div class="text-center px-2">
+                <span class="block text-5xl sm:text-6xl font-serif text-yellow-600 mb-2">08+</span>
+                <span class="text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Years of Magic</span>
+              </div>
+              <div class="text-center px-2">
+                <span class="block text-5xl sm:text-6xl font-serif text-yellow-600 mb-2">12</span>
+                <span class="text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Global Awards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="portfolio" class="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-black">
+        <div class="container mx-auto">
+          <div class="flex flex-col items-center mb-12 sm:mb-20 text-center">
+            <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif mb-4 sm:mb-6">The Gallery</h2>
+            <div class="w-16 sm:w-20 h-px bg-yellow-600 mb-4 sm:mb-6"></div>
+            <p class="max-w-2xl text-sm sm:text-base text-gray-400 font-light tracking-wide px-2">
+              A curation of our most intimate and celebrated moments captured through the lens.
+            </p>
+          </div>
+
+          <div id="gallery-container" class="masonry-grid">
+            <!-- Gallery items will be loaded via JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Gallery Section -->
+      <section id="films" class="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-[#0d0d0d]">
+        <div class="container mx-auto">
+          <div class="flex flex-col items-center mb-12 sm:mb-20 text-center">
+            <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif mb-4 sm:mb-6">Cinematic Films</h2>
+            <div class="w-16 sm:w-20 h-px bg-yellow-600 mb-4 sm:mb-6"></div>
+            <p class="max-w-2xl text-sm sm:text-base text-gray-400 font-light tracking-wide px-2">
+              Experience the emotion, the grandeur, and the intimate moments that make each wedding uniquely beautiful.
+            </p>
+          </div>
+
+          <div id="films-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <!-- Film items will be loaded via JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Form Section -->
+      <section id="book" class="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-[#0a0a0a]">
+        <div class="container mx-auto max-w-4xl">
+          <div class="flex flex-col items-center mb-12 sm:mb-20 text-center">
+            <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif mb-4 sm:mb-6">Book Your Date</h2>
+            <div class="w-16 sm:w-20 h-px bg-yellow-600 mb-4 sm:mb-6"></div>
+            <p class="max-w-2xl text-sm sm:text-base text-gray-400 font-light tracking-wide px-2">
+              Let's start planning the visual legacy of your special day.
+            </p>
+          </div>
+
+          <form id="booking-form" class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 bg-neutral-900/30 p-4 sm:p-8 md:p-12 border border-white/5 rounded-sm">
+            <div class="space-y-2">
+              <label class="text-xs uppercase tracking-widest text-gray-400">Full Name</label>
+              <input 
+                required
+                name="name"
+                type="text" 
+                class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-yellow-600 transition-colors text-white text-base"
+                placeholder="Enter your name"
+                minlength="2"
+              />
+            </div>
+            <div class="space-y-2">
+              <label class="text-xs uppercase tracking-widest text-gray-400">WhatsApp Number</label>
+              <input 
+                required
+                name="whatsapp"
+                type="tel" 
+                class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-yellow-600 transition-colors text-white text-base"
+                placeholder="+91 00000 00000"
+              />
+            </div>
+            <div class="space-y-2">
+              <label class="text-xs uppercase tracking-widest text-gray-400">Event Type</label>
+              <select 
+                name="eventType"
+                class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-yellow-600 transition-colors appearance-none text-white text-base"
+              >
+                <option class="bg-black" value="Wedding">Wedding</option>
+                <option class="bg-black" value="Pre-Wedding">Pre-Wedding</option>
+                <option class="bg-black" value="Engagement">Engagement</option>
+                <option class="bg-black" value="Other">Other</option>
+              </select>
+            </div>
+            <div class="space-y-2">
+              <label class="text-xs uppercase tracking-widest text-gray-400">Event Date</label>
+              <input 
+                required
+                name="date"
+                type="date" 
+                class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-yellow-600 transition-colors text-white text-base"
+              />
+            </div>
+            <div class="md:col-span-2 space-y-2">
+              <label class="text-xs uppercase tracking-widest text-gray-400">Event City</label>
+              <input 
+                required
+                name="city"
+                type="text" 
+                class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-yellow-600 transition-colors text-white text-base"
+                placeholder="e.g. Pune, Bombay, Udaipur"
+              />
+            </div>
+            <div class="md:col-span-2 space-y-2">
+              <label class="text-xs uppercase tracking-widest text-gray-400">Message</label>
+              <textarea 
+                name="message"
+                rows="4"
+                class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-yellow-600 transition-colors resize-none text-white text-base"
+                placeholder="Tell us about your story..."
+              ></textarea>
+            </div>
+            <div class="md:col-span-2 mt-8">
+              <button 
+                type="submit"
+                class="w-full py-4 sm:py-5 bg-yellow-600 text-white font-bold uppercase tracking-[0.3em] hover:bg-yellow-700 transition-colors duration-300 active:scale-95 text-sm sm:text-base min-h-[44px]"
+              >
+                Send Enquiry via WhatsApp
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 bg-black border-t border-white/5">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <div>
+            <h3 class="text-2xl font-serif mb-4">SHADHI <span class="text-yellow-600">FILMER</span></h3>
+            <p class="text-sm text-gray-400 font-light leading-relaxed">
+              Crafting timeless visual narratives for your most precious moments across India and beyond.
+            </p>
+          </div>
+          
+          <div>
+            <h4 class="text-sm uppercase tracking-widest mb-4 text-gray-400">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#portfolio" class="hover:text-yellow-600 transition-colors">Portfolio</a></li>
+              <li><a href="#films" class="hover:text-yellow-600 transition-colors">Films</a></li>
+              <li><a href="#about" class="hover:text-yellow-600 transition-colors">Story</a></li>
+              <li><a href="#book" class="hover:text-yellow-600 transition-colors">Book Now</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-sm uppercase tracking-widest mb-4 text-gray-400">Contact</h4>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-yellow-600">📞</span>
+                <a href="tel:+917798200639" class="hover:text-yellow-600 transition-colors">+91 77982 00639</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-yellow-600">📧</span>
+                <a href="mailto:hello@shadhifilmer.com" class="hover:text-yellow-600 transition-colors">shadhifilmer@gmail.com</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-yellow-600">📍</span>
+                <span class="text-gray-400">Pune, India</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-white/5 pt-8 text-center">
+          <p class="text-xs text-gray-500 tracking-wide">
+            © 2026 Shadhi Filmer. All rights reserved. | Destination Wedding Photography
+          </p>
+          <p class="text-xs text-gray-600 tracking-wide mt-3">
+            Design by <a href="https://www.instagram.com/code.inbrain/" target="_blank" rel="noopener noreferrer" class="text-yellow-600 hover:text-yellow-500 transition-colors">codeinbrain</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Social Media Buttons -->
+    <div class="fixed bottom-10 right-10 z-[100] flex flex-col gap-4">
+      <!-- Instagram Button -->
+      <a 
+        href="https://www.instagram.com/shadhifilmer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        title="Follow us on Instagram"
+        class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300"
+      >
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.204-.012 3.584-.07 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12c0-3.403 2.759-6.162 6.162-6.162s6.162 2.759 6.162 6.162c0 3.403-2.759 6.162-6.162 6.162s-6.162-2.759-6.162-6.162zm2.889 0c0 1.821 1.452 3.273 3.273 3.273s3.273-1.452 3.273-3.273c0-1.821-1.452-3.273-3.273-3.273s-3.273 1.452-3.273 3.273zm11.294-6.468c0 .795.645 1.44 1.44 1.44s1.44-.645 1.44-1.44-.645-1.44-1.44-1.44-1.44.645-1.44 1.44z"/>
+        </svg>
+      </a>
+      
+      <!-- WhatsApp Button -->
+      <a 
+        href="https://wa.me/917798200639" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        title="Chat with us on WhatsApp"
+        class="bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300"
+      >
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
