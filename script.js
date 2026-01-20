@@ -30,25 +30,25 @@ const FILMS = [
   { 
     id: 'f1', 
     thumbnail: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80', 
-    videoUrl: 'https://drive.google.com/uc?export=download&id=1LZZDw-1dJ7-BBZJmmDOW2CoceIWYv8jq', 
+    videoUrl: 'https://drive.google.com/file/d/1LZZDw-1dJ7-BBZJmmDOW2CoceIWYv8jq/preview', 
     title: 'The Eternal Vow' 
   },
   { 
     id: 'f2', 
     thumbnail: 'https://images.unsplash.com/photo-1470338745628-1fdb73251f11?auto=format&fit=crop&q=80', 
-    videoUrl: 'https://drive.google.com/uc?export=download&id=1LaqAiCd1UVQUk14FqSyY94n-aETDVJ8W', 
+    videoUrl: 'https://drive.google.com/file/d/1LaqAiCd1UVQUk14FqSyY94n-aETDVJ8W/preview', 
     title: 'Love in Udaipur' 
   },
   { 
     id: 'f3', 
     thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80', 
-    videoUrl: 'https://drive.google.com/uc?export=download&id=1xjTQGza2AmcqtWChf6wXSBHdoAL0bmrH', 
+    videoUrl: 'https://drive.google.com/file/d/1xjTQGza2AmcqtWChf6wXSBHdoAL0bmrH/preview', 
     title: 'A Royal Affair' 
   },
   { 
     id: 'f4', 
     thumbnail: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80', 
-    videoUrl: 'https://drive.google.com/uc?export=download&id=1o31A0rWhyI0ljJy6FLWiyPbS7xquVS01', 
+    videoUrl: 'https://drive.google.com/file/d/1o31A0rWhyI0ljJy6FLWiyPbS7xquVS01/preview', 
     title: 'Pre Wedding' 
   }
 ];
@@ -202,20 +202,21 @@ function initFilms() {
     const item = document.createElement('div');
     item.className = 'video-item relative group overflow-hidden bg-black shadow-2xl';
     
+    // Extract file ID from Google Drive URL
+    const fileId = film.videoUrl.split('/d/')[1].split('/')[0];
+    const embedUrl = `https://drive.google.com/file/d/${fileId}/preview`;
+    
     item.innerHTML = `
       <div class="relative w-full pt-[56.25%] bg-black">
-        <video 
-          class="absolute inset-0 w-full h-full object-cover"
+        <iframe 
+          class="absolute inset-0 w-full h-full"
           id="video-${film.id}"
-          poster="${film.thumbnail}"
-          controls
-          controlsList="nodownload"
-          loading="lazy"
+          src="${embedUrl}"
           title="${film.title}"
-        >
-          <source src="${film.videoUrl}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
       </div>
     `;
     
