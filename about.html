@@ -19,6 +19,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   
@@ -73,57 +75,24 @@
     <!-- Navbar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-8">
       <div class="container mx-auto px-4 sm:px-6 flex justify-between items-center">
-        <a href="index.html" class="text-xl sm:text-2xl font-serif tracking-widest font-bold hover:text-yellow-600 transition-colors" title="Shadhi Filmer - Home">
-          SHADHI <span class="text-yellow-600">FILMER</span>
-        </a>
+       <a href="index.html"
+   class="absolute left-1/2 -translate-x-1/2 top-3
+          text-xl sm:text-2xl font-light
+          tracking-[0.18em]
+          hover:text-yellow-600 transition-colors"
+   style="font-family: 'Playfair Display', serif; font-weight: 300;"
+   title="Shadhi Filmer - Home">
+  SHADHIFILMER
+</a>
+
         
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-4 lg:space-x-10 text-xs lg:text-sm tracking-widest uppercase font-light">
-          <a href="#portfolio" class="hover:text-yellow-600 transition-colors py-2" title="View our photography gallery">Portfolio</a>
-          <a href="#films" class="hover:text-yellow-600 transition-colors py-2" title="Watch our cinematic films">Films</a>
-          <a href="about.html" class="text-yellow-600 border-b-2 border-yellow-600 py-2" title="Our story and philosophy">About Us</a>
-          <a href="#book" class="bg-yellow-600 text-black px-6 py-2 hover:bg-yellow-700 transition-colors font-semibold" title="Book your wedding date">Book Now</a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none z-50 p-2 active:scale-95 transition-transform" aria-label="Toggle Menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black/95 backdrop-blur-md pt-20 z-40">
-        <div class="flex flex-col items-center justify-center h-full space-y-8 text-lg tracking-widest uppercase font-light">
-          <a href="#portfolio" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Portfolio</a>
-          <a href="#films" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Films</a>
-          <a href="about.html" class="mobile-menu-link text-yellow-600 py-2 px-4 border border-yellow-600 rounded">About Us</a>
-          <a href="#book" class="mobile-menu-link bg-yellow-600 text-black py-3 px-8 hover:bg-yellow-700 transition-colors font-semibold rounded">Book Now</a>
-        </div>
+    
       </div>
     </nav>
 
     <main>
       <!-- Hero Section for About Page -->
-      <section class="relative w-full overflow-hidden flex items-center justify-center text-center pt-32 pb-16 sm:pt-40 sm:pb-20 min-h-[60vh] sm:min-h-[70vh]">
-        <div class="absolute inset-0 z-0">
-          <img 
-            src="./images/william-bayreuther-hfk6xOjQlFk-unsplash.jpg" 
-            alt="About ShadhiFilmer" 
-            class="w-full h-full object-cover scale-110"
-            loading="eager"
-          />
-          <div class="absolute inset-0 bg-black opacity-60"></div>
-        </div>
-
-        <div class="relative z-10 px-4 sm:px-6 max-w-4xl mx-auto">
-          <p class="text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.5em] uppercase text-yellow-600 mb-4 sm:mb-6">About Us</p>
-          <h1 class="text-4xl sm:text-6xl md:text-xl lg:text-6xl font-serif mb-4 sm:mb-4">Our Story</h1>
-          <div class="w-16 sm:w-24 h-px bg-yellow-600 mx-auto"></div>
-        </div>
-      </section>
+     
 
       <!-- About Content Section -->
       <section class="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-black overflow-hidden">
@@ -134,9 +103,9 @@
           <!-- Main Content -->
           <div class="relative z-10">
             <!-- Brand Header -->
-            <div class="text-center mb-12 sm:mb-20">
-              <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-yellow-600 sm:mb-6">SHADHI FILMER</h2>
-              <p class="text-sm sm:text-base tracking-[0.2em] uppercase text-gray-400">Founded by Rana</p>
+            <div class="text-center mb-12 sm:mb-12">
+            
+              <p class="text-sm sm:text-base tracking-[0.2em] uppercase text-white-600">Founded by Rana</p>
             </div>
 
             <!-- Founder Image Section -->
@@ -155,54 +124,38 @@
               </div>
             </div>
 
-            <!-- Story Content -->
-            <div class="max-w-4xl mx-auto space-y-8 sm:space-y-10 mb-16 sm:mb-24 px-4">
-              <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed md:leading-loose text-gray-300 text-center font-light">
-                ShadhiFilmer was born from a bold creative choice. In his third year pursuing a Bachelor of Arts, Rana stepped away from the conventional academic path to follow an undeniable calling — photography as an art form, not merely a profession.
-              </p>
-              
-              <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed md:leading-loose text-gray-300 text-center font-light">
-                What began as a freelance journey soon transformed into a global narrative. With experience across <span class="text-yellow-600 font-semibold">150+ weddings</span>, including refined destination celebrations in <span class="text-yellow-600 font-semibold">Dubai</span>, Rana developed a signature style shaped by international exposure, cultural diversity, and an uncompromising eye for detail.
-              </p>
-              
-              <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed md:leading-loose text-gray-300 text-center font-light">
-                Today, ShadhiFilmer stands as a <span class="text-white font-medium">luxury wedding photography studio</span>, specializing in fine-art and editorial storytelling for modern couples who seek elegance, depth, and authenticity. Our work is intentional, emotionally rich, and visually timeless — inspired by fashion, cinema, and real human connection.
-              </p>
-              
-              <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed md:leading-loose text-gray-300 text-center font-light">
-                Every frame is meticulously curated to preserve not just moments, but atmosphere, emotion, and legacy. We believe weddings deserve to be remembered as they are felt — graceful, powerful, and unforgettable.
-              </p>
-            </div>
+         <!-- Story Content -->
+<div class="max-w-4xl mx-auto space-y-8 sm:space-y-10 mb-16 sm:mb-24 px-4">
 
-            <!-- Philosophy Statement -->
-            <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-24 py-8 sm:py-12 border-t border-b border-white/10 px-4">
-              <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif italic leading-relaxed text-white mb-4">
-                "ShadhiFilmer doesn't just document weddings."
-              </p>
-              <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif text-yellow-600">
-                We craft visual heirlooms.
-              </p>
-            </div>
+  <p class="text-base sm:text-lg md:text-xl 
+            leading-relaxed sm:leading-relaxed md:leading-loose 
+            text-gray-300 text-center font-light tracking-[0.25em] uppercase"
+     style="font-family: 'Libre Bodoni', serif;">
+    ShadhiFilmer was born from a bold creative choice. In his third year pursuing a Bachelor of Arts, Rana stepped away from the conventional academic path to follow an undeniable calling — photography as an art form, not merely a profession.
+  </p> 
 
-            <!-- Stats Section -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-12 md:gap-20 lg:gap-32 mb-16 sm:mb-20 px-4">
-              <div class="text-center w-full sm:w-auto">
-                <span class="block text-5xl sm:text-6xl md:text-7xl font-serif text-yellow-600 mb-3 sm:mb-4">150+</span>
-                <span class="block text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Weddings Captured</span>
-                <span class="block text-xs text-gray-500 mt-2">India & Beyond</span>
-              </div>
-              <div class="text-center w-full sm:w-auto">
-                <span class="block text-5xl sm:text-6xl md:text-7xl font-serif text-yellow-600 mb-3 sm:mb-4">08+</span>
-                <span class="block text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Years of Artistry</span>
-                <span class="block text-xs text-gray-500 mt-2">Since 2016</span>
-              </div>
-              <div class="text-center w-full sm:w-auto">
-                <span class="block text-5xl sm:text-6xl md:text-7xl font-serif text-yellow-600 mb-3 sm:mb-4">Global</span>
-                <span class="block text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Recognition</span>
-                <span class="block text-xs text-gray-500 mt-2">Dubai & India</span>
-              </div>
-            </div>
+  <p class="text-base sm:text-lg md:text-xl 
+            leading-relaxed sm:leading-relaxed md:leading-loose 
+            text-gray-300 text-center font-light tracking-[0.25em] uppercase"
+     style="font-family: 'Libre Bodoni', serif;">
+    What began as a freelance journey soon transformed into a global narrative. With experience across <span class="text-yellow-600 font-semibold">150+ weddings</span>, including refined destination celebrations in <span class="text-yellow-600 font-semibold">Dubai</span>, Rana developed a signature style shaped by international exposure, cultural diversity, and an uncompromising eye for detail.
+  </p>
 
+  <p class="text-base sm:text-lg md:text-xl 
+            leading-relaxed sm:leading-relaxed md:leading-loose 
+            text-gray-300 text-center font-light tracking-[0.25em] uppercase"
+     style="font-family: 'Libre Bodoni', serif;">
+    Today, ShadhiFilmer stands as a <span class="text-white font-medium">luxury wedding photography studio</span>, specializing in fine-art and editorial storytelling for modern couples who seek elegance, depth, and authenticity.
+  </p>
+
+  <p class="text-base sm:text-lg md:text-xl 
+            leading-relaxed sm:leading-relaxed md:leading-loose 
+            text-gray-300 text-center font-light tracking-[0.25em] uppercase"
+     style="font-family: 'Libre Bodoni', serif;">
+    Every frame is meticulously curated to preserve not just moments, but atmosphere, emo
+
+
+           
             <!-- Call to Action -->
             <div class="text-center max-w-2xl mx-auto px-4">
               <p class="text-base sm:text-lg text-gray-400 mb-8">
@@ -228,45 +181,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="py-20 px-6 bg-black border-t border-white/5">
-      <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          <div>
-            <h3 class="text-2xl font-serif mb-4">SHADHI <span class="text-yellow-600">FILMER</span></h3>
-            <p class="text-sm text-gray-400 font-light leading-relaxed">
-              Crafting timeless visual narratives for your most precious moments across India and beyond.
-            </p>
-          </div>
-          
-          <div>
-            <h4 class="text-sm uppercase tracking-widest mb-4 text-gray-400">Quick Links</h4>
-            <ul class="space-y-2 text-sm">
-              <li><a href="index.html#portfolio" class="hover:text-yellow-600 transition-colors">Portfolio</a></li>
-              <li><a href="index.html#films" class="hover:text-yellow-600 transition-colors">Films</a></li>
-              <li><a href="about.html" class="hover:text-yellow-600 transition-colors">About Us</a></li>
-              <li><a href="index.html#book" class="hover:text-yellow-600 transition-colors">Book Now</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="text-sm uppercase tracking-widest mb-4 text-gray-400">Contact</h4>
-            <ul class="space-y-2 text-sm">
-              <li class="flex items-center gap-2">
-                <span class="text-yellow-600">📞</span>
-                <a href="tel:+917798200639" class="hover:text-yellow-600 transition-colors">+91 77982 00639</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-yellow-600">📧</span>
-                <a href="mailto:shadhifilmer@gmail.com" class="hover:text-yellow-600 transition-colors">shadhifilmer@gmail.com</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-yellow-600">📍</span>
-                <span class="text-gray-400">Pune, India</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+   
         
         <div class="border-t border-white/5 pt-8 text-center">
           <p class="text-xs text-gray-500 tracking-wide">

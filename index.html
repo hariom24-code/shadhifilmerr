@@ -33,7 +33,8 @@
   <!-- Preload Critical Resources -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" as="style">
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1600">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
+
   <title>Shadhi Filmer | Wedding Photography & Films</title>
   <script src="https://cdn.tailwindcss.com" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" importance="high">
@@ -73,39 +74,51 @@
 <body>
   <div class="relative overflow-x-hidden selection:bg-yellow-600 selection:text-white">
     <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-8">
-      <div class="container mx-auto px-4 sm:px-6 flex justify-between items-center">
-        <a href="index.html" class="text-xl sm:text-2xl font-cursiveacking-widest font-mediumhover:text-yellow-600 transition-colors" title="Shadhi Filmer - Home">
-          SHADHI<span class="text-yellow-600">FILMER</span>
-        </a>
-        
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-4 lg:space-x-10 text-xs lg:text-sm tracking-widest uppercase font-light">
-          <a href="#portfolio" class="hover:text-yellow-600 transition-colors py-2" title="View our photography gallery">Portfolio</a>
-          <a href="#films" class="hover:text-yellow-600 transition-colors py-2" title="Watch our cinematic films">Films</a>
-          <a href="about.html" class="hover:text-yellow-600 transition-colors py-2" title="Our story and philosophy">About Us</a>
-          <a href="#book" class="bg-yellow-600 text-black px-6 py-2 hover:bg-yellow-700 transition-colors font-semibold" title="Book your wedding date">Book Now</a>
-        </div>
+   <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-6">
+  <div class="relative max-w-7xl mx-auto px-4 flex items-center justify-between">
 
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none z-50 p-2 active:scale-95 transition-transform" aria-label="Toggle Menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
+    <!-- Center Logo -->
+  <a href="index.html"
+   class="absolute left-1/2 -translate-x-1/2 top-3
+          text-xl sm:text-2xl font-light
+          tracking-[0.18em]
+          hover:text-yellow-600 transition-colors"
+   style="font-family: 'Playfair Display', serif; font-weight: 300;"
+   title="Shadhi Filmer - Home">
+  SHADHIFILMER
+</a>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black/95 backdrop-blur-md pt-20 z-40">
-        <div class="flex flex-col items-center justify-center h-full space-y-8 text-lg tracking-widest uppercase font-light">
-          <a href="#portfolio" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Portfolio</a>
-          <a href="#films" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Films</a>
-          <a href="about.html" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">About Us</a>
-          <a href="#book" class="mobile-menu-link bg-yellow-600 text-black py-3 px-8 hover:bg-yellow-700 transition-colors font-semibold rounded">Book Now</a>
-        </div>
-      </div>
-    </nav>
+
+    <!-- Spacer (left side empty for balance) -->
+    <div class="w-1/3"></div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-6 lg:space-x-10 
+                text-xs lg:text-sm tracking-widest uppercase font-light">
+      <a href="#portfolio" class="hover:text-yellow-600 transition-colors py-2">Portfolio</a>
+      <a href="about.html" class="hover:text-yellow-600 transition-colors py-2">About Us</a>
+      <a href="#book"
+         class="bg-yellow-600 text-black px-6 py-2 
+                hover:bg-yellow-700 transition-colors font-semibold">
+        Book Now
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn"
+      class="md:hidden text-white focus:outline-none z-50 p-2 active:scale-95 transition-transform"
+      aria-label="Toggle Menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+  </div>
+</nav>
+
 
     <main>
       <!-- Hero Section -->
