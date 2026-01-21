@@ -42,6 +42,63 @@ h1, h2, h3, .font-serif {
   }
 }
 
+/* Mobile Menu Styling */
+#mobile-menu {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+}
+
+#mobile-menu:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInSlideDown 0.3s ease-out;
+}
+
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Menu Links Hover Effect */
+.mobile-menu-link {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 2px;
+  background-color: #ca8a04;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-link:hover::after,
+.mobile-menu-link:active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Hamburger Icon Animation */
+#mobile-menu-btn svg path {
+  transition: all 0.3s ease;
+}
+
 /* Container Responsive */
 .container {
   width: 100%;
