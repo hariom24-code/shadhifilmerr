@@ -21,7 +21,7 @@ const PHOTOS = [
   { id: '16', url: './images/17.jpg', alt: 'Professional Wedding Portraits', category: 'Portraits' },
   { id: '17', url: 'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&q=80&w=500', alt: 'Wedding Day Photography', category: 'Palace' },
   { id: '18', url: './images/18.jpg', alt: 'Wedding Ceremony Moments', category: 'Candid' },
-  { id: '19', url: './images/WhatsApp Image 2026-01-20 at 3.10.17 PM.jpeg', alt: 'Destination Wedding Photography', category: 'Pre-Wedding' },
+  { id: '19', url: './images/sf20.JPEG', alt: 'Destination Wedding Photography', category: 'Pre-Wedding' },
   { id: '20', url: './images/19.jpg', alt: 'Candid Wedding Photography', category: 'Candid' }
 ];
 
