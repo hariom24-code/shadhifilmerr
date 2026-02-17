@@ -17,7 +17,7 @@ const PHOTOS = [
   { id: '12', url: './images/13.jpg', alt: 'Candid Wedding Moments', category: 'Wedding' },
   { id: '13', url: './images/14.webp', alt: 'Wedding Ceremony Photography', category: 'Wedding' },
   { id: '14', url: './images/16.jpg', alt: 'Pre-Wedding Photography Session', category: 'Wedding' },
-  { id: '15', url: './images/white 2.jpeg', alt: 'Wedding Reception Details', category: 'Pre-Wedding' },
+  { id: '15', url: './images/white 2_cropped_processed_by_imagy.jpg', alt: 'Wedding Reception Details', category: 'Pre-Wedding' },
   { id: '16', url: './images/17.jpg', alt: 'Professional Wedding Portraits', category: 'Portraits' },
   { id: '17', url: 'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&q=80&w=500', alt: 'Wedding Day Photography', category: 'Palace' },
   { id: '18', url: './images/18.jpg', alt: 'Wedding Ceremony Moments', category: 'Candid' },
